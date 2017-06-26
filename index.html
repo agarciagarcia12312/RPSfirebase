@@ -11,14 +11,17 @@
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 </head>
 <body>
+	<div id ="top">
+		<h1 id="tiitle"> Rock Paper scissords multiplayer Game</h1>
+	</div>
 	<form>
-		<div>
+		<div id="nameInput">
 			<h3>Enter your name</h3>
 			<input type="text" name="comment" id="userName">	<input type="Submit" value="submit" id="nameSubmit">
 		</div>
 	</form>
 
-	<div id="p1Data">
+	<div id="p1Data" hidden>
 		<h3 id="p1Name">Player one</h3>
 		<div id ="p1Images"></div>
 		<h3>wins:</h3><h3 id="p1wins"></h3>
@@ -28,25 +31,31 @@
 		<img src="assets/images/s1.jpg" id="scissors1"> -->
 	</div>
 
-	<div id="p2Data">
+	<div id="p2Data" hidden>
 		<h3 id="p2Name">Player 2</h3>
 		<div id ="p2Images"></div>
 		<h3>wins:</h3><h3 id="p2wins"></h3>
-		<h3>looses:</h3><h3 id="p1looses"></h3>
+		<h3>looses:</h3><h3 id="p2looses"></h3>
 	<!-- 	<img src="assets/images/r2.jpg" id="rock2">
 		<img src="assets/images/p2.jpg" id="paper2">
 		<img src="assets/images/s2.jpg" id="scissors2"> -->
 	</div>
+	<h3>Ties:</h3><h3 id="ties"></h3>
 
 
-	<div id="chatBox">
+	<div id="pickedIMG">
+		<img src="assets/images/r1.jpg" id="user" class="bottomIMG">
+		<img src="assets/images/r1.jpg" id="oponent" class="bottomIMG">
+	</div>
+
+	<<!-- div id="chatBox" hidden>
 		<form>
 			<div>
 				<input type="text" name="comment" id="userComment">
 				<input type="Submit" value="submit" id="commentSubmit">
 			</div>
 		</form>	
-	</div>
+	</div> -->
 
 </body>
 <!-- javscript link -->
